@@ -33,6 +33,10 @@ typedef struct {
     int q1, q2;                // Odometry information
     double v, psidot;          // Used to correct the scans according to the speed of the robot
     ts_position_t position[3]; // 0 : forward - 1 : backward - 2 : final / closed loop
+         
+
+
+    int scan_size;
     int d[TS_SCAN_SIZE];
 } ts_sensor_data_t;
 
